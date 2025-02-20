@@ -1,6 +1,7 @@
 # plan4res
 
-This github organisation contains everything to install and run plan4res
+This github organisation contains everything to install and run plan4res.
+
 All documentation is available in https://github.com/plan4res/documentation
 
 plan4res is composed of:
