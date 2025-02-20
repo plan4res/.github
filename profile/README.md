@@ -3,6 +3,12 @@
 This github organisation contains everything to install and run plan4res
 All documentation is available in https://github.com/plan4res/documentation
 
+plan4res is composed of:
+- an environment for running the different modules: p4r-env. This was developed by CRAY Switzerland and HPE Switzerland during the plan4res project (see https://gitlab.com/cerl/plan4res/p4r-env)
+- the main modules for modelling, simulating and optimising a power system, which are based on the SMS++ library developed by University of Pisa (see https://gitlab.com/smspp/smspp-project)
+- tools for data treatment and visualisation (python scripts in github.com/plan4res/plan4res-scripts); These tools are using the pyam-iamc module developped by IIASA (see https://pyam-iamc.readthedocs.io/en/stable/index.html)
+- scripts for managing workflows and running all the modules (see github.com/plan4res/include)
+
 ## Install plan4res
 It is recommended to install on linux (for Windows users, install in WSL), with the full plan4res environment
 This requires at least 3Gb
