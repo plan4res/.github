@@ -4,6 +4,12 @@ This github organisation contains everything to install and run plan4res.
 
 All documentation is available in https://github.com/plan4res/documentation
 
+Plan4res is an electricity system optimisation and simulation tool, composed of the 3 following models:
+
+- A Capacity expansion model (CEM) aimed at adapting the electricity mix - meaning optimising the mix to fit to the demand. CEM will determine new power generation, storage and interconnections capacities, minimising the sum of the investment cost and the average operation cost on a chosen year.
+- A seasonal storage valuation model (SSV) aimed at optimising the management of seasonal storages. SSV will compute "water values" which will be used by both CEM and SIM in order to give a value to the water, allowing use of the water when it is optimal (usually in periods with high demand) 
+- A simulation tool, based on a Unit Commitment model (SIM), aimed at optimising the operation of the system. SIM will compute the schedules of all assets (generation, storage, flows on interconnections), usually on a whole year with hourly timestep.
+
 plan4res is composed of:
 - an environment for running the different modules: p4r-env. This was developed by CRAY Switzerland and HPE Switzerland during the plan4res project (see https://gitlab.com/cerl/plan4res/p4r-env)
 - the main modules for modelling, simulating and optimising a power system, which are based on the SMS++ library developed by University of Pisa (see https://gitlab.com/smspp/smspp-project)
@@ -11,7 +17,7 @@ plan4res is composed of:
 - scripts for managing workflows and running all the modules (see github.com/plan4res/include)
 
 ## Install plan4res
-It is recommended to install on linux (for Windows users, install in WSL), with the full plan4res environment
+It is recommended to install on linux (for Windows users, install in WSL), with the full plan4res environment p4r-env
 This requires at least 3Gb
 Clone the installation scripts in https://github.com/plan4res/install and run:
     ./plan4res_install.sh 
@@ -34,6 +40,3 @@ See userManual for details about how to run plan4res
 - Create NetCDF data for CEM (required by SMS++) out of plan4res csv data: p4r FORMAT toyDataset -M invest
 - Run the capacity expansion (CEM): p4r CEM toyDataset
 - Run a workflow with data creation, data formatting, models runs: p4r SSVandSIM   or p4r SSVandCEM
-
-
--->
