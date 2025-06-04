@@ -43,6 +43,7 @@ See userManual for details about how to run plan4res
 
 
 ## 📬 Contact
-👉 Fill this contact form https://formspree.io/f/xnnvnnvg 
+👉 [Fill this contact form](https://formspree.io/f/xnnvnnvg) 
+
 
 
