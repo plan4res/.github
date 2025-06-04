@@ -40,3 +40,9 @@ See userManual for details about how to run plan4res
 - Create NetCDF data for CEM (required by SMS++) out of plan4res csv data: p4r FORMAT toyDataset -M invest
 - Run the capacity expansion (CEM): p4r CEM toyDataset
 - Run a workflow with data creation, data formatting, models runs: p4r SSVandSIM   or p4r SSVandCEM
+
+
+## 📬 Contact
+👉 Fill this contact form https://formspree.io/f/xnnvnnvg 
+
+
