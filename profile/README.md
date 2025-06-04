@@ -29,6 +29,7 @@ See possible options in documentation or ./user_init_plan4res.sh -H
 
 ## Run plan4res
 Create your dataset, taking inspiration from the examplary dataset installed together with plan4res installation, in the repo where you installed plan4res, and in case you configured a user account, in the chosen repo, under data/toyDataset
+This example dataset is also available [here](https://github.com/plan4res/toyDataset)
 
 See userManual for details about how to run plan4res
 
